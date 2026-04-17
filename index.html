@@ -1072,7 +1072,41 @@
         </div>
 
         <div class="contact-form-wrap reveal reveal-delay-2">
-          <div class="contact-form">
+          <form action="https://formspree.io/f/xjgjyzvj" method="POST" class="contact-form">
+
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label">First Name</label>
+      <input type="text" name="firstName" class="form-input" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Last Name</label>
+      <input type="text" name="lastName" class="form-input" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Email Address</label>
+    <input type="email" name="email" class="form-input" required>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Subject</label>
+    <input type="text" name="subject" class="form-input" required>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Message</label>
+    <textarea name="message" class="form-textarea" required></textarea>
+  </div>
+
+  <input type="hidden" name="_subject" value="New Portfolio Message">
+  <input type="hidden" name="_redirect" value="https://patelmanav826-ai.github.io/My-Site/">
+
+  <button type="submit" class="btn-submit">Send Message →</button>
+
+</form>
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label">First Name</label>
@@ -1095,7 +1129,7 @@
               <label class="form-label">Message</label>
               <textarea class="form-textarea" placeholder="Tell me about your project or opportunity..."></textarea>
             </div>
-            <button class="btn-submit" onclick="handleSubmit(this)">Send Message →</button>
+            <button class="btn-submit" ">Send Message →</button>
           </div>
         </div>
       </div>
@@ -1233,7 +1267,7 @@ function toggleMenu() {
 }
 
 // ── CONTACT FORM ──
-function handleSubmit(btn) {
+ {
   const orig = btn.textContent;
   btn.textContent = 'Sending...';
   btn.disabled = true;
